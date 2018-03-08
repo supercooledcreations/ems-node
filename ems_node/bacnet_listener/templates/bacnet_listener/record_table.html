@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Record Table</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            {% for item in record_table_header %}
+            <th>{{ item }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in record_table_data %}
+        <tr>
+            {% for item in row %}
+                <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>
